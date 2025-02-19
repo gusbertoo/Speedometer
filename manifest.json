@@ -1,0 +1,17 @@
+{
+  "name": "MAD1 Speedometer",
+  "short_name": "Speedometer",
+  "theme_color": "black",
+  "background_color": "black",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "https://devweb2024.cis.strath.ac.uk/~cxb22121/CS317/coursework1/index.html",
+  "description": "MAD1 Speedometer for CS317, by Angus Fraser",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "https://static.vecteezy.com/system/resources/previews/025/933/901/non_2x/dashboard-icon-level-meter-speed-illustration-vector.jpg",
+      "sizes": "1024x1024"
+    }
+  ]
+}
