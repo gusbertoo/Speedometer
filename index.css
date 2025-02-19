@@ -1,0 +1,61 @@
+html {
+	color: white;
+	font-family: monospace;
+	text-align: center;
+}
+
+header, footer {
+	color: grey;
+}
+
+#speed {
+	font-size: min(40vw, 40vh);
+	margin: 0;
+}
+
+#unit {
+	font-size: min(20vw, 20vh);
+	margin: 0;
+}
+
+#street {
+	font-size: min(10vw, 10vh);
+	margin: 0;
+}
+
+#localLimit {
+	color: black;
+	padding-top: 17px;
+	margin: auto;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+#hide_button, #show_button {
+	margin-bottom: 5px;
+}
+
+#roadSign {
+	width: 80px;
+	height: 80px;
+	background-color: #FFFFFF;
+	border: 20px solid #EE0000;
+	border-radius: 100px;
+	margin: 5px;
+}
+
+.hidden {
+	display: none;
+}
+
+#hide_button_div, #speed_limit_position, #background_image, #background_text_colours, #units_select {
+	margin: 5px;
+}
+
+#show_button, #hide_button {
+	background-color: black;
+	border-color: white;
+	color: white;
+	padding: 5px;
+}
