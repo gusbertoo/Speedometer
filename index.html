@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0064)https://devweb2024.cis.strath.ac.uk/~aes02112/mad_one/index.html -->
+<html lang="en">
+<head>
+  <meta name="viewport" http-equiv="Content-Type" content="text/html; charset=UTF-8; width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <title>MAD1 Speedometer</title>
+
+  <style type="text/css"></style>
+  <style type="text/css" id="operaUserStyle"></style>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<header>
+  <p>Angus Fraser: CS317 Speedometer Solo Assessment</p>
+</header>
+
+<main>
+  <div id="speedometer">
+    <div id="speedometer_text">
+      <p id="speed">--</p>
+      <p id="unit">MPH</p>
+      <p id="street">--</p>
+
+      <div id="show_button_div">
+        <input onclick="showSettings()" type="button" id="show_button" value="Show Settings">
+      </div>
+    </div>
+
+    <div id="roadSign">
+      <p id="localLimit">--</p>
+    </div>
+  </div>
+
+  <div id="settings">
+    <h1>Settings</h1>
+
+    <div id="units_select">
+      <input onchange="unitMPH()" type="radio" id="mph" name="units">Always MPH
+      <input onchange="unitKPH()" type="radio" id="kph" name="units">Always KPH
+      <input onchange="unitLocal()" type="radio" id="local" name="units" checked>Local Units
+    </div>
+
+    <div id="background_text_colours">
+      Background Colour:
+      <input onchange="backgroundColourChange()" type="color" id="back_colour">
+      Text Colour:
+      <input onchange="textColourChange()" type="color" id="text_colour">
+    </div>
+
+    <div id="background_image">
+      Background Image:
+      <input onchange="imageChange()" type="text" id="back_image" placeholder="Enter Image URL">
+    </div>
+
+    <div id="speed_limit_position">
+      Speed Limit Position:
+      <input onchange="limitLeft()" type="radio" id="limit_left" name="limit_pos">Left
+      <input onchange="limitRight()" type="radio" id="limit_right" name="limit_pos" checked>Right
+    </div>
+
+    <div id="hide_button_div">
+      <input onclick="hideSettings()" type="button" id="hide_button" value="Hide Settings">
+    </div>
+
+  </div>
+</main>
+
+<script src="index_files/speed.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/~cxb22121/CS317/coursework1/sw.js')
+            .then(() => console.log("Service Worker Registered"))
+            .catch(error => console.log("Service Worker Registration Failed:", error));
+  }
+</script>
+
+</body>
+</html>
